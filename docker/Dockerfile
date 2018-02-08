@@ -19,7 +19,6 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSIO
     "platforms;android-${ANDROID_VERSION}" \
     "platform-tools"
 
-RUN mkdir /application
-COPY . /applicaiton
+COPY . /application
 WORKDIR /application
 RUN pwd && ls -al && ./build.sh
