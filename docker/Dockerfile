@@ -21,4 +21,4 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSIO
 
 COPY . /application
 WORKDIR /application
-RUN pwd && ls -al && ./build.sh
+RUN chmod +x ./build.sh && ./build.sh
