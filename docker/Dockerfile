@@ -22,4 +22,4 @@ RUN $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSIO
 RUN mkdir /application
 COPY . /applicaiton
 WORKDIR /application
-RUN ./build.sh
+RUN pwd && ls -al && ./build.sh
